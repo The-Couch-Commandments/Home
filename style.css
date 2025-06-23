@@ -421,6 +421,9 @@ footer {
     font-family: 'Rye', cursive;
 } 
 @media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2em;
+    }
     nav a {
         display: block;
         margin: 10px 0;
