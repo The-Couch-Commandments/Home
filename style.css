@@ -420,3 +420,9 @@ footer {
     color: #8b4513;
     font-family: 'Rye', cursive;
 } 
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
