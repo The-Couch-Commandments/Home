@@ -1,0 +1,422 @@
+/* General Body Styles */
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background-color: #f5deb3; /* A parchment-like color */
+    color: #5a3a22; /* A dark brown for text */
+    margin: 0;
+    padding: 0;
+    background-image: url('images/parchment.jpg'); /* A subtle parchment texture */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #8b4513; /* A saddle brown color */
+    color: #f5f5dc; /* A beige color for header text */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #5a3a22;
+    font-family: 'Rye', cursive; /* A western-style font */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+nav a {
+    color: #f5f5dc;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(245, 222, 179, 0.8); /* A slightly transparent parchment */
+    border: 2px solid #5a3a22;
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: 'Rye', cursive;
+    color: #8b4513;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Rye', cursive;
+    color: #8b4513;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* Sanctity Content */
+#sanctity {
+    line-height: 1.6;
+}
+
+.sanctity-content {
+    margin-top: 20px;
+}
+
+.sanctity-content p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.sanctity-content ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.sanctity-content li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.sanctity-content a {
+    color: #8b4513;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sanctity-content a:hover {
+    text-decoration: underline;
+}
+
+/* Declaration Content */
+#declaration {
+    line-height: 1.8;
+}
+
+.declaration-content {
+    margin-top: 20px;
+}
+
+.declaration-content p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.foundational-truths {
+    list-style-type: decimal;
+    margin: 20px 0;
+    padding-left: 30px;
+    font-weight: bold;
+    color: #8b4513;
+}
+
+.foundational-truths li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.approved-activities {
+    list-style-type: disc;
+    margin: 20px 0;
+    padding-left: 30px;
+    font-style: italic;
+}
+
+.approved-activities li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    color: #5a3a22;
+}
+
+.final-statement {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 30px 0 20px 0;
+    color: #8b4513;
+    font-family: 'Rye', cursive;
+}
+
+/* Rules List */
+#rules ol {
+    list-style-type: none;
+    counter-reset: rule-counter;
+    padding-left: 0;
+}
+
+#rules li {
+    counter-increment: rule-counter;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    position: relative;
+    padding-left: 40px;
+}
+
+#rules li::before {
+    content: counter(rule-counter) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    color: #8b4513;
+    font-family: 'Rye', cursive;
+    font-size: 1.5em;
+}
+
+/* Agreements */
+#agreements {
+    line-height: 1.6;
+}
+
+.agreement {
+    margin: 30px 0;
+    padding: 25px;
+    border: 3px solid #8b4513;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 220, 0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.agreement h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #8b4513;
+    font-size: 1.8em;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 10px;
+}
+
+.agreement-content {
+    font-size: 1.05em;
+}
+
+.agreement-content p {
+    margin-bottom: 15px;
+}
+
+.agreement-content ol {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+.agreement-content ol li {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.agreement-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.agreement-content ul li {
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.signature-line {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #8b4513;
+    text-align: center;
+    font-family: 'Rye', cursive;
+    font-size: 1.2em;
+    color: #8b4513;
+}
+
+.signature-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #8b4513;
+}
+
+.signature-section .signature-line {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: none;
+    text-align: center;
+    font-family: 'Rye', cursive;
+    font-size: 1.1em;
+    color: #8b4513;
+}
+
+.signature-section .signature-line:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.agreement-notice {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(139, 69, 19, 0.1);
+    border-left: 5px solid #8b4513;
+    border-radius: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+.agreement-notice p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #8b4513;
+}
+
+/* Wanted Posters */
+.wanted-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wanted-poster {
+    border: 10px solid #8b4513;
+    padding: 15px;
+    margin: 15px;
+    background-color: #f5f5dc;
+    text-align: center;
+    width: 300px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.wanted-poster img {
+    width: 100%;
+    border: 2px solid #5a3a22;
+}
+
+.wanted-poster p {
+    font-family: 'Rye', cursive;
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #8b4513;
+}
+
+/* Hall of Fame */
+.fame-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fame-member {
+    border: 10px solid #8b4513;
+    padding: 15px;
+    margin: 15px;
+    background-color: #f5f5dc;
+    text-align: center;
+    width: 300px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.fame-member img {
+    width: 100%;
+    border: 2px solid #5a3a22;
+}
+
+.fame-member p {
+    font-family: 'Rye', cursive;
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #8b4513;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #5a3a22;
+}
+
+/* Sheriff Page */
+#sheriff-tribute {
+    line-height: 1.6;
+}
+
+.sheriff-content {
+    margin-top: 20px;
+}
+
+.sheriff-portrait {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    border: 3px solid #8b4513;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 220, 0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.sheriff-image {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #8b4513;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.sheriff-title {
+    font-family: 'Rye', cursive;
+    font-size: 1.3em;
+    color: #8b4513;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.sheriff-duties, .sheriff-achievements, .sheriff-quotes, .sheriff-appreciation {
+    margin: 30px 0;
+    padding: 20px;
+    border: 2px solid #8b4513;
+    border-radius: 8px;
+    background-color: rgba(245, 245, 220, 0.7);
+}
+
+.sheriff-duties h3, .sheriff-achievements h3, .sheriff-quotes h3, .sheriff-appreciation h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #8b4513;
+    font-size: 1.6em;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 10px;
+}
+
+.sheriff-duties ul, .sheriff-achievements ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+.sheriff-duties li, .sheriff-achievements li {
+    margin-bottom: 12px;
+    font-size: 1.05em;
+}
+
+.sheriff-quotes blockquote {
+    font-style: italic;
+    font-size: 1.1em;
+    margin: 15px 0;
+    padding: 15px;
+    border-left: 4px solid #8b4513;
+    background-color: rgba(139, 69, 19, 0.1);
+    border-radius: 5px;
+}
+
+.sheriff-appreciation p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+    text-align: justify;
+}
+
+.sheriff-salute {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 25px;
+    color: #8b4513;
+    font-family: 'Rye', cursive;
+} 
